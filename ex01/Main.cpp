@@ -1,9 +1,11 @@
 #include <iostream>
 #include <cstring>
+#include "PhoneBook.hpp"
 
 int main()
 {
 	std::string str;
+	Phonebook phonebook;
 
 	std::cout << "\033[0;31m";
 	std::cout << "Welcome To The Phonebook!\n" << std::endl;
@@ -18,14 +20,14 @@ int main()
 		if (str == "SEARCH" || str == "search")
 			std::cout << "Search" << std::endl;
 		else if (str == "ADD" || str == "add")
-			std::cout << "ADD" << std::endl;
+			phonebook.add_contact();
 		else if (str == "EXIT" || str == "exit")
 		{
-			std::cout << "Exited the program." << std::endl;
+			std::cout << "\033[0;31mExited the program." << std::endl;
 			exit(EXIT_SUCCESS);
 		}
 		else
-			std::cout << "Unknown Command !" << std::endl;
+			std::cout << "\033[0;31mUnknown Command !" << std::endl;
 		
 
 	}

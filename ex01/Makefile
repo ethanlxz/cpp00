@@ -6,6 +6,8 @@ CFLAGS = -Wall -Wextra -Werror -fsanitize=address -std=c++98
 
 
 OBJS = obj/Main.o \
+		obj/PhoneBook.o \
+		obj/Contact.o  \
 
 all: $(NAME)
 
