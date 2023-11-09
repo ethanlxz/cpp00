@@ -6,6 +6,7 @@ Contact::Contact(void)
 
 Contact::~Contact(void)
 {
+	
 }
 
 void	Contact::set_contact(std::string input, int id)

@@ -21,8 +21,6 @@ public:
 		std::string get_nickname();
 		void		print_contact();
 
-		//test
-		void	show_contact();
 };
 
 #endif

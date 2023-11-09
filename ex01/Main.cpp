@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstring>
 #include "PhoneBook.hpp"
+#include "Contact.hpp"
 
 int main()
 {
@@ -23,13 +24,11 @@ int main()
 			phonebook.add_contact();
 		else if (str == "EXIT" || str == "exit")
 		{
-			std::cout << "\033[0;31mExited the program." << std::endl;
+			std::cout << "\033[0;31mExited the program.\033[0m" << std::endl;
 			exit(EXIT_SUCCESS);
 		}
 		else
-			std::cout << "\033[0;31mUnknown Command !" << std::endl;
-		
-
+			std::cout << "\033[0;31mUnknown Command !\033[0m" << std::endl;
 	}
 	return 0;
 }
