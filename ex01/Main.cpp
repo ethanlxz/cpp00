@@ -19,7 +19,7 @@ int main()
 
 		std::getline(std::cin, str);
 		if (str == "SEARCH" || str == "search")
-			std::cout << "Search" << std::endl;
+			phonebook.search_contact();
 		else if (str == "ADD" || str == "add")
 			phonebook.add_contact();
 		else if (str == "EXIT" || str == "exit")

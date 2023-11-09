@@ -44,7 +44,7 @@ void Contact::print_contact()
 {
 	if (!this->first_name.empty())
 	{
-		std::cout << "First Name : " << this->first_name << std::endl;
+		std::cout << "\033[0;34mFirst Name : " << this->first_name << std::endl;
 		std::cout << "Last Name : " << this->last_name << std::endl;
 		std::cout << "Nickname : " << this->nickname << std::endl;
 		std::cout << "Phone Number : " << this->phone_num << std::endl;
@@ -52,6 +52,6 @@ void Contact::print_contact()
 	}
 	else
 	{
-		std::cout << "Contact is empty !" << std::endl;
+		std::cout << "\033[0;34mContact is empty !" << std::endl;
 	}
 }

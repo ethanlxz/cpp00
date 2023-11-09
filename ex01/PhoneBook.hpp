@@ -3,6 +3,7 @@
 
 #include "Contact.hpp"
 #include <iostream>
+#include <iomanip>
 
 class Phonebook
 {
@@ -13,6 +14,7 @@ class Phonebook
 			Phonebook(void);
 			~Phonebook(void);
 			void add_contact();
+			void truncate(std::string str);
 			void search_contact();
 };
 
