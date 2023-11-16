@@ -5,7 +5,7 @@ CC = c++
 CFLAGS = -Wall -Wextra -Werror -fsanitize=address -std=c++98
 
 
-OBJS = obj/megaphone.o \
+OBJS = obj/Megaphone.o \
 
 all: $(NAME)
 
