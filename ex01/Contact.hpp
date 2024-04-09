@@ -20,6 +20,7 @@ public:
 		std::string get_last_name();
 		std::string get_nickname();
 		void		print_contact();
+		std::string trimtab(std::string input);
 
 };
 

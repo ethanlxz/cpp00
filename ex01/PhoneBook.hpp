@@ -4,6 +4,7 @@
 #include "Contact.hpp"
 #include <iostream>
 #include <iomanip>
+#include <cctype>
 
 class Phonebook
 {
@@ -16,6 +17,7 @@ class Phonebook
 			void add_contact();
 			void truncate(std::string str);
 			void search_contact();
+			int  check_blank(std::string str);
 };
 
 #endif

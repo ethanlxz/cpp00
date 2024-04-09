@@ -9,18 +9,35 @@ Contact::~Contact(void)
 	
 }
 
+
+std::string Contact::trimtab(std::string input) 
+{
+    std::string result;
+	int i = -1;
+
+    while (input[++i]) 
+	{
+        if (input[i] == '\t') 
+            result += std::string(4, ' ');
+        else 
+            result += input[i];
+    }
+
+    return result;
+}
+
 void	Contact::set_contact(std::string input, int id)
 {
 	if (id == 1)
-		this->first_name = input;
+		this->first_name = trimtab(input);
 	else if (id == 2)
-		this->last_name = input;
+		this->last_name = trimtab(input);
 	else if (id == 3)
-		this->nickname = input;
+		this->nickname = trimtab(input);
 	else if (id == 4)
-		this->phone_num = input;
+		this->phone_num = trimtab(input);
 	else if (id == 5)
-		this->dark_secret = input;
+		this->dark_secret = trimtab(input);
 }
 
 
